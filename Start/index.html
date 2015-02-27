@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <form method="post" action="form.php">
+        <h1>Registration</h1>
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="field-email">Email</label>
+                <input type="email" name="email" id="field-email"/>
+            </div>
+            <div>
+                <label for="field-password">Password</label>
+                <input type="password" name="password" id="field-password"/>
+            </div>
+            <div>
+                <label for="field-password-again">Password again</label>
+                <input type="password" name="password-again" id="field-password-again"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label for="field-first-name">First Name</label>
+                <input type="text" name="first-name" id="field-first-name"/>
+            </div>
+            <div>
+                <label for="field-last-name">Last Name</label>
+                <input type="text" name="last-name"  id="field-last-name"/>
+            </div>
+            <div>
+                <label>Sex</label>
+                <input type="radio" value="M" id="field-sex-m" name="sex"/><label for="field-sex-m" class="radio">M</label>
+                <input type="radio" value="F" id="field-sex-f" name="sex"/><label for="field-sex-f" class="radio">F</label>
+            </div>
+            <div>
+                <label for="field-occupation">Occupation</label>
+                <select name="occupation" id="field-occupation">
+                    <option value="Student">Student</option>
+                    <option value="Student">Teacher</option>
+                    <option value="Student">Parent</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
